@@ -7,7 +7,7 @@
     background-size: 100%;
     margin:0 auto;
     width: 100%;
-    //border:solid;
+    position: relative;
 }
 
 #faceSpace{
@@ -48,13 +48,12 @@
     font-family: "Tahoma";
     letter-spacing: 20px;
     color: #9AAFAF;
+    text-shadow: 1px 1px 10px #000;
     margin-bottom:40px;
 }
+
 #bruce #line2 {
-   margin-top: 2.5em;
-}
-   }
-}
+    
 }
 #intro #line6 {
     color: #710a05;
@@ -72,6 +71,9 @@ nav a {
     color:#9AAFAF;
     font-family:'Lucida Console';
     font-size:30px;
+}
+nav a:hover, a:focus, a:active{
+    color: white;
 }
 nav #home{
    // background-image:url("pics/spade.png");
@@ -120,7 +122,6 @@ nav #Contact{
     font-family:Tahoma;
     font-size: 80px;
     padding: 0;
-//    background: red;
     width: 525px;
     
 }
@@ -159,8 +160,10 @@ nav #Contact{
     width: 100px;
 }
 #footer{
-    clear:both;
-    height: 100px;
+    bottom: 0;
+    position: absolute;
+    height: 20px;
+    width: 100%;
     background:grey;
     //width: 960px;
     opacity:0.5;
@@ -172,19 +175,20 @@ nav #Contact{
     height:60px;
 }
 #infoSec1{
-    background:white;
+    background:rgba(210, 170, 91, 0.75);
     height:700px;
     margin: 0 auto;
     text-align:center;
+    color: white;
+    text-shadow: 1px 1px 10px #333;
     max-width:100%;
 }
-#infoSec1 #title{
-    //background:red;
-    font-size:40px;
-    font-family:'Lucida Console';
+#infoSec1 h1 {
+    padding: .3em;
+    margin: 0;
 }
 #infoSec1 #mid{
     height:620px;
     margin:0 auto;
-    background: blue;
+    background: #185675;
 }
