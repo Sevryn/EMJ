@@ -11,12 +11,12 @@ $(document).ready(function () {
     var changed = 1;
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 700 && changed != 2) {
+        if ($(this).scrollTop() > 1100 && changed != 2) {
             changed = 2;
             changeFaces();
         }
 
-        if ($(this).scrollTop() < 700 && changed == 2) {
+        if ($(this).scrollTop() < 1100 && changed == 2) {
             changed = 1;
             changeFaces();
         }

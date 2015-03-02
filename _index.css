@@ -26,6 +26,7 @@
 
 #faceSpace .rface{
     position:absolute;
+    
     right:0;
     opacity:0.0;
 }
@@ -43,37 +44,16 @@
     margin: 20px auto 15px auto; 
 } 
 #bruce #line1{
-    font-size: 16px;
+    font-size: 25px;
     font-family: "Tahoma";
     letter-spacing: 20px;
     color: #9AAFAF;
+    margin-bottom:40px;
 }
 #bruce #line2 {
-    font-size:100px;
-    color: orange;
-    //background: green;
-    font-family:'Card Characters';
-    /*color: #9AAFAF;*/
-    background-image:url("pics/spade.png");
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size:100px;
-    //
-    background-image:url("pics/heart.png");
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size:100px;
-    //
-    background-image:url("pics/club.png");
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size:100px;
-    //
-    background-image:url("pics/diamond.png");
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size:100px;
+   margin-top: 2.5em;
 }
+   }
 }
 }
 #intro #line6 {
@@ -84,25 +64,26 @@ nav {
     margin-top: 2.5em;
 }
 nav a {
-    padding: 3em;
-    background-size:5em;
+    padding: 1.5em;
+    //background-size:5em;
     background-position:center center;
     background-repeat:no-repeat;
     text-decoration: none;
     color:#9AAFAF;
     font-family:'Lucida Console';
+    font-size:30px;
 }
 nav #home{
-    background-image:url("pics/spade.png");
+   // background-image:url("pics/spade.png");
 }
-nav #About{
-    background-image:url("pics/heart.png");
+//nav #About{
+   // background-image:url("pics/heart.png");
 }
 nav #Resume{
-    background-image:url("pics/club.png");
+   // background-image:url("pics/club.png");
 }
 nav #Contact{
-    background-image:url("pics/diamond.png");
+   // background-image:url("pics/diamond.png");
 }
 #introImg{
     //background:blue;
