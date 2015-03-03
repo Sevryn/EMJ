@@ -3,7 +3,8 @@ var rFace = [2, 3, 0, 1];
 var faceNames = ["diamond_face","heart_face","club_face","spade_face"];
 
 var fi = -1;
-
+reFace = [ 1100, 2200, 3300, 4400];
+faceSec = [ 1, 2, 3, 4];
 $(document).ready(function () {
 
     changeFaces();
@@ -14,25 +15,21 @@ $(document).ready(function () {
     var changed = 1;
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 1100 && changed != 2) {
-            changed = 2;
-            changeFaces();
-        }
-
-        if ($(this).scrollTop() < 1100 && changed == 2) {
-            changed = 1;
-            changeFaces();
-        }
+        changeFaces();
     });
 
 });
 
 function changeFaces() {
-    fi++;
 
-    if (fi > 3) fi -= 4;
+    for (i = 0; i < 4; i++) {
+        if ($(window).scrollTop() <= reFace[i]) {
+            fi = i;
+            break;
+        }
+
+    }
 
     $("#leftFace").css('background-image', 'url("pics/' + faceNames[lFace[fi]] + '_L.png")');
-    
     $("#rightFace").css('background-image','url("pics/' + faceNames[ rFace[ fi ]] + '.png")');
 }
