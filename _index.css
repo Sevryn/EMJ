@@ -16,6 +16,7 @@
     top:0;
     height:70%;
     z-index:-1;
+    //background:red;
 }
 
 #faceSpace .lface{
@@ -29,6 +30,27 @@
     
     right:0;
     opacity:0.0;
+}
+
+#faceSpace #leftFace{
+    position:fixed;
+    left:0;
+    //background:blue;
+    width:30%;
+    height:100%;
+    background-image:url("pics/diamond_face_L.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#faceSpace #rightFace{
+    position:fixed;
+    right:0;
+    //background:blue;
+    width:30%;
+    height:100%;
+    background-image:url("pics/diamond_face.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #topbar{
