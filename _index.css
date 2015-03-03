@@ -31,18 +31,18 @@
     opacity:0.0;
 }
 
-
-
 #topbar{
     background: grey;
     height: 20px;
     margin: 0;
     opacity: 0.5;
 }
+
 #bruce {
     text-align: center;
     margin: 20px auto 15px auto; 
-} 
+}
+ 
 #bruce #line1{
     font-size: 25px;
     font-family: "Tahoma";
@@ -55,13 +55,16 @@
 #bruce #line2 {
     
 }
+
 #intro #line6 {
     color: #710a05;
     text-align:center;
 }
+
 nav {
     margin-top: 2.5em;
 }
+
 nav a {
     padding: 1.5em;
     //background-size:5em;
@@ -71,22 +74,14 @@ nav a {
     color:#9AAFAF;
     font-family:'Lucida Console';
     font-size:30px;
+    text-shadow: 1px 1px 10px #000;
+    transition:0.8s;
 }
+
 nav a:hover, a:focus, a:active{
     color: white;
 }
-nav #home{
-   // background-image:url("pics/spade.png");
-}
-//nav #About{
-   // background-image:url("pics/heart.png");
-}
-nav #Resume{
-   // background-image:url("pics/club.png");
-}
-nav #Contact{
-   // background-image:url("pics/diamond.png");
-}
+
 #introImg{
     //background:blue;
     height: 450px;
@@ -103,33 +98,34 @@ nav #Contact{
 #dynamicWords #img1{
     position:relative;
     left:-400px;
-     
-
 }
+
 #dynamicWords #img2{
     margin: 45px 0 0 0;
     position: relative; 
     left: -380px;
 }
+
 #introImg img {
     max-width: 100%;
     position: absolute;
     top: -4em;
     left: -8em;
 }
+
 #intro {
     float:left;
     font-family:Tahoma;
     font-size: 80px;
     padding: 0;
-    width: 525px;
-    
+    width: 525px;    
 }
+
 #intro #line1{
     color:#222D2D;
     margin:0 0 0px 0;
-
 }
+
 #intro #line5 {
     font-size: 60px;
     float: left;
@@ -141,24 +137,29 @@ nav #Contact{
     color: #000000;
     z-index:-1;
 }
+
 #intro #line2{
     color: #185675;
     margin:0 0 -50px 0;
 
 }
+
 #intro #line3{
     color:#9AAFAF;
     margin:0 0 30px 0;
 }
+
 #intro #line4{
     color:#FFFFFF;
 }
+
 #mid #space {
     float:left;
     height:200px;
     background:blue;
     width: 100px;
 }
+
 #footer{
     bottom: 0;
     position: absolute;
@@ -174,6 +175,7 @@ nav #Contact{
     max-width:100%;
     height:60px;
 }
+
 #infoSec1{
     background:rgba(210, 170, 91, 0.75);
     height:700px;
@@ -183,10 +185,12 @@ nav #Contact{
     text-shadow: 1px 1px 10px #333;
     max-width:100%;
 }
+
 #infoSec1 h1 {
     padding: .3em;
     margin: 0;
 }
+
 #infoSec1 #mid{
     height:620px;
     margin:0 auto;
