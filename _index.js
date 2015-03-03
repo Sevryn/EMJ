@@ -1,8 +1,13 @@
-﻿var lFace = [1, 2, 3, 4];
-var rFace = [3, 4, 1, 2];
+﻿var lFace = [0, 1, 2, 3];
+var rFace = [2, 3, 0, 1];
+var faceNames = ["diamond_face","heart_face","club_face","spade_face"];
+
 var fi = -1;
 
 $(document).ready(function () {
+
+
+
     changeFaces();
     var lVal = 1;
     var rVal = 1;
@@ -24,7 +29,7 @@ $(document).ready(function () {
 
 });
 
-
+/*
 function changeFaces() {
     fi++;
     if (fi > 3) { fi -= 4; }
@@ -37,4 +42,13 @@ function changeFaces() {
 
     $("#lFace" + lVal).css({ "opacity": "1.0" });
     $("#rFace" + rVal).css({ "opacity": "1.0" });
+}*/
+function changeFaces() {
+    fi++;
+
+    if (fi > 3) fi -= 4;
+
+    $("#leftFace").css('background-image', 'url("pics/' + faceNames[lFace[fi]] + '_L.png")');
+    
+    $("#rightFace").css('background-image','url("pics/' + faceNames[ rFace[ fi ]] + '.png")');
 }
