@@ -199,6 +199,7 @@ nav a:hover, a:focus, a:active{
     height:620px;
     margin:0 auto;
     background: #185675;
+    text-align:center;
 }
 
 #spacer1{
@@ -208,6 +209,37 @@ nav a:hover, a:focus, a:active{
 
 #infoSec1{
     height:700px;
+    text-align: center;
+    
+}
+#infoSec1 #mid #box {
+    background: purple;
+    width:960px;
+    height: 620px;
+    margin: 0 auto;
+    border:solid;
+}
+
+#infoSec1 #mid #pic{
+    float: left;
+    width: 600px;
+    height:600px;
+    background: navajowhite;
+}
+
+#infoSec1 #mid #content1{
+    float:left;
+    width: 360px;
+    height:270px;
+    background: red;
+    padding-top:30px;
+}
+
+#infoSec1 #mid #content2{
+    float:left;
+    width: 360px;
+    height:300px;
+    background: green;
 }
 
 #spacer2{
@@ -215,12 +247,19 @@ nav a:hover, a:focus, a:active{
     text-align: center;
     height:400px;
 }
+
 #spacer2 img{
     position:relative;
     top: 30%;
 }
+
 #infoSec2{
     height:700px;
+}
+
+#infoSec2 #mid #content form input{
+   width:800px;
+   text-align: center;
 }
 
 #spacer3{
