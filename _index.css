@@ -165,7 +165,7 @@ nav a:hover, a:focus, a:active{
     color:#FFFFFF;
 }
 
-#mid #space {
+#space {
     float:left;
     height:200px;
     background:blue;
@@ -195,7 +195,7 @@ nav a:hover, a:focus, a:active{
     margin: 0;
 }
 
-.info #mid{
+.mid{
     height:620px;
     margin:0 auto;
     background: #185675;
@@ -215,7 +215,7 @@ nav a:hover, a:focus, a:active{
     
 }
 
-#infoSec1 #mid #box {
+#infoSec1 #box {
     /*background: purple;*/
     width:1200px;
     height: 620px;
@@ -223,21 +223,21 @@ nav a:hover, a:focus, a:active{
     border:solid;
 }
 
-#infoSec1 #mid #pic{
+#infoSec1 #pic{
     float: left;
     width: 600px;
     height:600px;
     /*background: navajowhite;*/
 }
 
-#infoSec1 #mid #title {
+#infoSec1 #title {
      float: left;
      width: 600px;
      height:50px;
      padding-top:30px;
      }
 
-#infoSec1 #mid #content{
+#infoSec1 #content{
     float:left;
     width: 540px;
     height:270px;
@@ -263,51 +263,55 @@ nav a:hover, a:focus, a:active{
     font-family:'Lucida Console';
 }
 
-#infoSec2 #mid #box {
+#infoSec2 #box {
     width: 1200px;
     height: 600px;
     margin: 0 auto;
     border: solid;
+    display: table;
 }
 
-#infoSec2 #mid #title {
+#title {
     float:left;
-    height:600px;
-    width:200px;
+    /*height:100px;*/
+    width:100%;
     background: red;
+    display: table-row;
 }
 
-#infoSec2 #mid #general {
+.row{
+    display: table-row;
+    /*height: 35%*/
+}
+
+#General {
     float: left;
-    height:600px;
     width:200px;
     background:orange;
+     border: solid;
 }
 
-#infoSec2 #mid #Cleaning {
+#Cleaning {
     float: left;
-    height:600px;
     width:200px;
     background:yellow;
+    border: solid;
 }
 
-#infoSec2 #mid #Office {
+#Office {
     float: left;
-    height:600px;
     width:200px;
     background: green;
 }
 
-#infoSec2 #mid #Errands {
+#Errands {
     float: left;
-    height:600px;
     width:200px;
     background: white;
 }
 
-#infoSec2 #mid #Roadside {
+#Roadside {
     float: left;
-    height:600px;
     width:200px;
     background: purple;
 }
@@ -324,7 +328,7 @@ nav a:hover, a:focus, a:active{
     height:550px;
 }
 
-#infoSec4 #mid #content form input{
+#infoSec4 #content form input{
    width:800px;
    text-align: center;
 }
