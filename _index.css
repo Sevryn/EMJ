@@ -210,11 +210,14 @@ nav a:hover, a:focus, a:active{
 #infoSec1{
     height:700px;
     text-align: center;
+    font-size:20px;
+    font-family:'Lucida Console';
     
 }
+
 #infoSec1 #mid #box {
-    background: purple;
-    width:960px;
+    /*background: purple;*/
+    width:1200px;
     height: 620px;
     margin: 0 auto;
     border:solid;
@@ -224,22 +227,22 @@ nav a:hover, a:focus, a:active{
     float: left;
     width: 600px;
     height:600px;
-    background: navajowhite;
+    /*background: navajowhite;*/
 }
 
-#infoSec1 #mid #content1{
+#infoSec1 #mid #title {
+     float: left;
+     width: 600px;
+     height:50px;
+     padding-top:30px;
+     }
+
+#infoSec1 #mid #content{
     float:left;
-    width: 360px;
+    width: 540px;
     height:270px;
-    background: red;
-    padding-top:30px;
-}
-
-#infoSec1 #mid #content2{
-    float:left;
-    width: 360px;
-    height:300px;
-    background: green;
+    padding:30px 30px 0 30px;
+    /* background: red;*/
 }
 
 #spacer2{
@@ -255,13 +258,59 @@ nav a:hover, a:focus, a:active{
 
 #infoSec2{
     height:700px;
+    text-align: center;
+    font-size:20px;
+    font-family:'Lucida Console';
 }
 
-#infoSec2 #mid #content form input{
-   width:800px;
-   text-align: center;
+#infoSec2 #mid #box {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    border: solid;
 }
 
+#infoSec2 #mid #title {
+    float:left;
+    height:600px;
+    width:200px;
+    background: red;
+}
+
+#infoSec2 #mid #general {
+    float: left;
+    height:600px;
+    width:200px;
+    background:orange;
+}
+
+#infoSec2 #mid #Cleaning {
+    float: left;
+    height:600px;
+    width:200px;
+    background:yellow;
+}
+
+#infoSec2 #mid #Office {
+    float: left;
+    height:600px;
+    width:200px;
+    background: green;
+}
+
+#infoSec2 #mid #Errands {
+    float: left;
+    height:600px;
+    width:200px;
+    background: white;
+}
+
+#infoSec2 #mid #Roadside {
+    float: left;
+    height:600px;
+    width:200px;
+    background: purple;
+}
 #spacer3{
     max-width:100%;
     height:400px;
@@ -273,6 +322,11 @@ nav a:hover, a:focus, a:active{
 #spacer4{
     max-width:100%;
     height:550px;
+}
+
+#infoSec4 #mid #content form input{
+   width:800px;
+   text-align: center;
 }
 
 #infoSec4{
