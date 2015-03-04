@@ -153,7 +153,6 @@ nav a:hover, a:focus, a:active{
 #intro #line2{
     color: #185675;
     margin:0 0 -50px 0;
-
 }
 
 #intro #line3{
@@ -215,13 +214,7 @@ nav a:hover, a:focus, a:active{
     
 }
 
-#infoSec1 #box {
-    /*background: purple;*/
-    width:1200px;
-    height: 620px;
-    margin: 0 auto;
-    border:solid;
-}
+
 
 #infoSec1 #pic{
     float: left;
@@ -229,13 +222,6 @@ nav a:hover, a:focus, a:active{
     height:600px;
     /*background: navajowhite;*/
 }
-
-#infoSec1 #title {
-     float: left;
-     width: 600px;
-     height:50px;
-     padding-top:30px;
-     }
 
 #infoSec1 #content{
     float:left;
@@ -263,9 +249,10 @@ nav a:hover, a:focus, a:active{
     font-family:'Lucida Console';
 }
 
-#infoSec2 #box {
+.box {
+    position: relative;
     width: 1200px;
-    height: 600px;
+    height: 620px;
     margin: 0 auto;
     border: solid;
     display: table;
@@ -284,36 +271,43 @@ nav a:hover, a:focus, a:active{
     /*height: 35%*/
 }
 
-#General {
+#row1{
+    position: absolute;
+    left: 11%;
+}
+
+#row2 {
+    position: absolute;
+    top:57%;
+    left: 24%;
+}
+
+.row div {
+    width: 215px;
+    height: 215px;
+    border: solid;
     float: left;
-    width:200px;
-    background:orange;
-     border: solid;
+    margin: 10px 40px;
+    padding: 5px;
+}
+
+#General {
+   
 }
 
 #Cleaning {
-    float: left;
-    width:200px;
-    background:yellow;
-    border: solid;
+
 }
 
 #Office {
-    float: left;
-    width:200px;
-    background: green;
 }
 
 #Errands {
-    float: left;
-    width:200px;
-    background: white;
+    
 }
 
 #Roadside {
-    float: left;
-    width:200px;
-    background: purple;
+    
 }
 #spacer3{
     max-width:100%;
