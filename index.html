@@ -3,7 +3,30 @@
 <head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="_index.js"></script>
+    <script src="js-image-slider.js"></script>
     <link rel="stylesheet" type="text/css" href="_index.css" />
+    <link rel="stylesheet" type="text/css" href="js-image-slider.css" />
+    <style type="text/css">
+        .cap {
+            width: 190px;
+            height: 240px;
+            display: inline-block;
+            background: white url(pics/images/caption1.gif) no-repeat 0 0;
+            border-radius: 4px;
+        }
+
+        .cap2 {
+            background-image: url(pics/images/caption2.gif);
+        }
+
+        .cap3 {
+            background-image: url(pics/images/caption3.gif);
+        }
+
+        .cap4 {
+            background-image: url(pics/images/caption4.gif);
+        }
+    </style>
     <!--<meta http-equiv="refresh" content="2">-->
     <title>Jack!</title>
 </head>
@@ -74,7 +97,44 @@
                 <h2>
                     Any simple task you’d ask a friend or personal assistant for help with.
                 </h2>
-                <div class="row" id="row1">
+                <div id="sliderFrame">
+                    <div id="slider">
+                        <a href="http://www.menucool.com/"><img src="pics/images/slider-1.jpg" alt="#htmlcaption1" /></a>
+                        <a class="lazyImage" href="pics/images/slider-2.jpg" title="#htmlcaption2">slide 2</a>
+                        <a href="http://www.menucool.com/javascript-image-slider">
+                            <b data-src="pics/images/slider-3.jpg" data-alt="#htmlcaption3">Image Slider</b>
+                        </a>
+                        <a class="lazyImage" href="pics/images/slider-4.jpg" title="#htmlcaption4">slide 4</a>
+                        <a class="lazyImage" href="pics/images/slider-4.jpg" title="#htmlcaption5">slide 5</a>
+                    </div>
+                    <!--thumbnails-->
+                    <div id="thumbs">
+                        <div class="thumb"><img src="pics/images/thumb-1.gif" /></div>
+                        <div class="thumb"><img src="pics/images/thumb-2.gif" /></div>
+                        <div class="thumb"><img src="pics/images/thumb-3.gif" /></div>
+                        <div class="thumb"><img src="pics/images/thumb-4.gif" /></div>
+                        <div class="thumb"><img src="pics/images/thumb-4.gif" /></div>
+                    </div>
+                    <!--captions-->
+                    <div style="display: none;">
+                        <div id="htmlcaption1">
+                            <div class="cap"></div>
+                        </div>
+                        <div id="htmlcaption2">
+                            <div class="cap cap2">Cleaning</div>
+                        </div>
+                        <div id="htmlcaption3">
+                            <div class="cap cap3">Personal Assistance</div>
+                        </div>
+                        <div id="htmlcaption4">
+                            <div class="cap cap4">Roadside Assistance</div>
+                        </div>
+                        <div id="htmlcaption5">
+                            <div class="cap cap5">Errand</div>
+                        </div>
+                    </div>
+                </div>
+               <!-- <div class="row" id="row1">
                     <div id="General">
                         <p>General labor</p>
                         <p>Anything that can be done accomplished a standard set of basic tools</p>
@@ -100,7 +160,7 @@
                         <p>Roadside Assistance</p>
                         <p>Change Tires, Jump Battery, Deliver Gas. No Tow.</p>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     <div id="spacer3"></div>
@@ -120,17 +180,22 @@
         <h1><a href="#topbar">Contact Us</a></h1>
         <div class="mid">
             <div class="box">
-                <form>
-                    <input type="text" name="name" placeholder="Name">
+                <textarea rows="25" cols="100" id="requestBox">Whatchu Need?</textarea>
+                <form id="requestForm">
+                    <input type="text" id="nameForm" name="name" placeholder="Name">
                     <br>
 
-                    <input type="text" name="contact" placeholder="Phone #">
+                    <input type="text" id="contactForm" name="contact" placeholder="Phone #">
                     <br>
 
-                    <input type="text" name="address" placeholder="Address">
+                    <input type="text" id="addressForm" name="address" placeholder="Address">
                     <br>
-
-                    <input type="text" name="task" placeholder="Task">
+                    <input type="radio" name="jobType" value="General"/>General Labor<br />
+                    <input type="radio" name="jobType" value="Cleaning" />House Keeping<br /> 
+                    <input type="radio" name="jobType" value="PA" />Personal Assitance<br />
+                    <input type="radio" name="jobType" value="Errands" />Errands<br />
+                    <input type="radio" name="jobType" value="RA" />Roadside Assistance<br />
+                    
                     <br>
 
                     <input type="submit" value="Submit Task" />

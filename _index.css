@@ -324,9 +324,25 @@ nav a:hover, a:focus, a:active{
 
 #infoSec4 #content form input{
    width:800px;
-   text-align: center;
+   /*text-align: center;*/
 }
 
 #infoSec4{
     height:700px;
+    border: solid;
+}
+
+#requestBox{
+    float: left;
+    margin:40px 40px 0px 0px;
+}
+
+#requestForm{
+    float: left;
+    margin:40px 0px 0px 0px;
+    text-align: left;
+}
+
+#nameForm{
+    width:200px
 }
