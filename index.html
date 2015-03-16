@@ -11,21 +11,11 @@
             width: 190px;
             height: 240px;
             display: inline-block;
-            background: white url(pics/images/caption1.gif) no-repeat 0 0;
+            background: white no-repeat 0 0;
             border-radius: 4px;
         }
 
-        .cap2 {
-            background-image: url(pics/images/caption2.gif);
-        }
 
-        .cap3 {
-            background-image: url(pics/images/caption3.gif);
-        }
-
-        .cap4 {
-            background-image: url(pics/images/caption4.gif);
-        }
     </style>
     <!--<meta http-equiv="refresh" content="2">-->
     <title>Jack!</title>
@@ -45,8 +35,8 @@
         </div>
         <nav>
             <a href="#infoSec1" id="About">About</a>
-            <a href="#infoSec2" id="Resume">Get it Done</a>
-            <a href="#infoSec3" id="home">Show Your Stuff</a>
+            <a href="#infoSec2" id="Resume">Tasks</a>
+            <a href="#infoSec3" id="home">Get it Done</a>
             <a href="#infoSec4" id="Contact">Contact Us</a>
         </nav>
     </div>
@@ -118,19 +108,54 @@
                     <!--captions-->
                     <div style="display: none;">
                         <div id="htmlcaption1">
-                            <div class="cap"></div>
+                            <div class="cap">
+                                <h2>General labor</h2>
+                                <p>Anything that can be done with a standard set of basic tools (Hammer, Screwdriver, Wrench & Socket Set)</p>
+                                <p>o Moving</p>
+                                <p>o Furniture Assembly</p>
+                                <p>o Painting (User provides paint & brushes)</p>
+                                <p>o Basic Building Maintenence</p>                               
+                            </div>
                         </div>
                         <div id="htmlcaption2">
-                            <div class="cap cap2">Cleaning</div>
+                            <div class="cap cap2">
+                                <h2>Cleaning</h2>
+                                <p>Anything that can be cleaned with a basic set of cleaning materials</p>
+                                <p>o Housekeeping</p>
+                                <p>o Laundry</p>                           
+                                <p>o Janitorial work</p>
+                                <p>o Clean people things</p>
+                                
+                            </div>
                         </div>
                         <div id="htmlcaption3">
-                            <div class="cap cap3">Personal Assistance</div>
+                            <div class="cap cap3">
+                                <h2>Personal Assistance</h2>
+                                <p>Basic office work & organization. No tools or training</p>
+                                <p>o Data entry & Paperwork</p>
+                                <p>o Phone Management & Sales</p>
+                                <p>o Organization</p>
+                                <p>o Dog Walking/Pet Sitting</p>
+                            </div>
                         </div>
                         <div id="htmlcaption4">
-                            <div class="cap cap4">Roadside Assistance</div>
+                            <div class="cap cap4">
+                                <h2>Errands</h2>
+                                <p>Anything that requires the pick up or delivery of goods</p>
+                                <p>o Grocery Shopping</p>
+                                <p>o Food Delivery</p>
+                                <p>o Document Delivery</p>
+                                <p>o Dry Cleaning Pick up/Drop off</p>
+                            </div>
                         </div>
                         <div id="htmlcaption5">
-                            <div class="cap cap5">Errand</div>
+                            <div class="cap cap5">
+                                <h2>Roadside Assistance</h2>
+                                <p>o Tire Change</p>
+                                <p>o Jump Battery</p> 
+                                <p>o Deliver Gas</p> 
+                                <p>o No Tow.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,20 +189,10 @@
             </div>
         </div>
     <div id="spacer3"></div>
+        <img src="pics/get_to_know.png" />
 
     <div id="infoSec3" class="info">
-        <h1><a href="#topbar">Become a Jack</a></h1>
-        <div class="mid">
-            <div class="box">
-
-            </div>
-        </div>
-    </div>
-    
-    <div id="spacer4"></div>
-
-    <div id="infoSec4" class="info">
-        <h1><a href="#topbar">Contact Us</a></h1>
+        <h1><a href="#topbar">Need a Hand?</a></h1>
         <div class="mid">
             <div class="box">
                 <textarea rows="25" cols="100" id="requestBox">Whatchu Need?</textarea>
@@ -190,16 +205,27 @@
 
                     <input type="text" id="addressForm" name="address" placeholder="Address">
                     <br>
-                    <input type="radio" name="jobType" value="General"/>General Labor<br />
-                    <input type="radio" name="jobType" value="Cleaning" />House Keeping<br /> 
+                    <input type="radio" name="jobType" value="General" />General Labor<br />
+                    <input type="radio" name="jobType" value="Cleaning" />House Keeping<br />
                     <input type="radio" name="jobType" value="PA" />Personal Assitance<br />
                     <input type="radio" name="jobType" value="Errands" />Errands<br />
                     <input type="radio" name="jobType" value="RA" />Roadside Assistance<br />
-                    
+
                     <br>
 
                     <input type="submit" value="Submit Task" />
                 </form>
+            </div>
+        </div>
+    </div>
+    
+    <div id="spacer4"></div>
+
+    <div id="infoSec4" class="info">
+        <h1><a href="#topbar">Contact Us</a></h1>
+        <div class="mid">
+            <div class="box">
+                
             </div>
  
         </div>
